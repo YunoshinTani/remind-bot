@@ -1,0 +1,24 @@
+# ローカルプレビュー専用。人数・時刻は仮の例で、本番では使用しない。
+[discord]
+guild_id = 0
+channel_id = 0
+
+[rotation]
+roster_file = "roster.example.csv"
+start_date = "2026-10-15"
+first_pair = 1
+
+[notifications]
+morning_time = "08:10"
+lunch_time = "12:10"
+dismissal_time = "16:20"
+dismissal_enabled = false
+pickup_location = "サンプル保管場所"
+submission_location = "サンプル提出場所"
+
+[calendar]
+source = "file"
+file = "calendar.example.json"
+
+[storage]
+database = "unused-demo.sqlite3"

@@ -1,0 +1,9 @@
+{
+  "days": [
+    {"date": "2026-10-15", "is_school_day": true},
+    {"date": "2026-10-16", "is_school_day": true, "lunch_time": "12:00"},
+    {"date": "2026-10-17", "is_school_day": false},
+    {"date": "2026-10-18", "is_school_day": false},
+    {"date": "2026-10-19", "is_school_day": true}
+  ]
+}

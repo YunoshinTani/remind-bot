@@ -1,0 +1,4 @@
+{
+  "destination": "botuser@server.example.invalid",
+  "remote_root": "/home/botuser/remind-bot-centos7"
+}

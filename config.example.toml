@@ -1,0 +1,52 @@
+# 学校サーバーでconfig.tomlを初めて作る際のひな形です。既存設定へ上書きしません。
+# 時刻・名簿・日付は例です。PCのプレビューにはexamples/config.demo.tomlを使います。
+[discord]
+guild_id = 0
+channel_id = 0
+# true の場合、番号-氏名からIDを照合する。Server Members Intentが必要。
+resolve_members = false
+
+[rotation]
+roster_file = "roster.csv"
+# この日から学校がある日だけ担当を進める。開始日自体は休日でも可。
+start_date = "2026-10-15"
+# 在籍設定で除外する前の組番号。1=1・2番、2=3・4番。
+first_pair = 1
+
+[notifications]
+timezone = "Asia/Tokyo"
+morning_time = "08:10"
+lunch_time = "12:10"
+lunch_end_time = "12:50"
+# 導入先固有の名称はサーバーの設定だけに記載する。
+pickup_location = "担当教員の部屋の前"
+submission_location = "担当教員の部屋の前"
+# 提出リマインドも必要なら true。提出完了ボタンは作成しない。
+dismissal_enabled = false
+dismissal_time = "16:20"
+# 通知予定時刻から何分まで送信を許すか。起動が遅れた場合の古い通知を防止。
+grace_minutes = 5
+poll_seconds = 20
+
+[calendar]
+# "file": 日付ごとの JSON / "http": 汎用GET / "myid": MyiD 時間割API
+source = "file"
+file = "calendar.json"
+# HTTP の場合、{date} は YYYY-MM-DD に置換される。
+url = ""
+timeout_seconds = 10
+refresh_seconds = 300
+# HTTP の日程をローカル JSON で上書きする場合のファイル。空なら無効。
+overrides_file = ""
+
+# API の JSON キーが異なる場合、ドット区切りで指定できる。
+# 判定値は厳密に true / false。授業の有無の変換などは別途アダプターが必要。
+[calendar.fields]
+date = "date"
+is_school_day = "is_school_day"
+morning_time = "morning_time"
+lunch_time = "lunch_time"
+dismissal_time = "dismissal_time"
+
+[storage]
+database = "data/remind-bot.sqlite3"

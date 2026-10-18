@@ -1,0 +1,55 @@
+{
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.cwd": "${workspaceFolder}",
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+
+  "files.associations": {
+    "LICENSE": "plaintext"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    ".venv": true,
+    "*.egg-info": true
+  },
+  "files.watcherExclude": {
+    ".venv/**": true,
+    ".cache/**": true,
+    "backups/**": true,
+    "dist/**": true,
+    "data/**": true,
+    "*.egg-info/**": true,
+    "**/__pycache__/**": true
+  },
+  "search.exclude": {
+    ".vscode/**": true,
+    "*.code-workspace": true,
+    ".editorconfig": true,
+    ".gitignore": true,
+    ".gitattributes": true,
+    ".venv/**": true,
+    ".cache/**": true,
+    "backups/**": true,
+    "dist/**": true,
+    "data/**": true,
+    "*.egg-info/**": true,
+    "**/__pycache__/**": true
+  }
+}

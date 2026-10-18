@@ -1,0 +1,24 @@
+{
+  "dailyPlan": [
+    {
+      "classDate": "2026-10-16",
+      "period": 1,
+      "startTime": "08:40:00",
+      "endTime": "10:10:00",
+      "subjectName": "科目A",
+      "facilityName": "教室A",
+      "lecturerName": "担当教員A",
+      "isCanceled": false
+    },
+    {
+      "classDate": "2026-10-16",
+      "period": 2,
+      "startTime": "10:20:00",
+      "endTime": "11:50:00",
+      "subjectName": "科目B",
+      "facilityName": "教室B",
+      "lecturerName": "担当教員B",
+      "isCanceled": true
+    }
+  ]
+}
