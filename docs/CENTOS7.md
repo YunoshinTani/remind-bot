@@ -137,6 +137,6 @@ chmod 700 bot.sh
 | `GLIBC_... not found` | `getconf GNU_LIBC_VERSION` と同梱環境の対象条件 |
 | `WEBSOCKET OK` が出ない | HTTPSとは別にWebSocketが許可されているか |
 | 起動直後に終了 | `data/bot.log` の今回の起動後のエラー |
-| `PyNaCl` / `davey` 警告 | 音声用ライブラリの警告。通知・ボタン用の追加導入は不要 |
+| `PyNaCl` / `davey` 警告 | 旧同梱版の音声用ライブラリ不足。起動時に1回ずつ表示。解消する場合は [追加手順](VOICE_LIBRARIES.md) |
 
 配布物のSHA-256と構成は `bundle-manifest.json` に記録します。Python配布物は配布元のハッシュと照合し、ライブラリのライセンス情報も同梱します。

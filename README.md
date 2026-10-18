@@ -37,6 +37,7 @@ Discordで日誌当番の通知・回収記録・次の担当日の照会を行�
 | ディレクトリ・設定ファイルの役割 | [構成ガイド](docs/STRUCTURE.md) |
 | 起動・停止、名簿・通知時刻・場所の変更 | [運用手順](docs/OPERATIONS.md) |
 | CentOS 7向け同梱環境と更新・復旧 | [CentOS 7の手順](docs/CENTOS7.md) |
+| PyNaCl・daveyの追加と警告の解消 | [音声用ライブラリ](docs/VOICE_LIBRARIES.md) |
 | コードの編集、VS Code、テスト | [開発ガイド](docs/DEVELOPMENT.md) |
 | 新しいPC・サーバーの準備 | [初期設定](docs/START_HERE.md) |
 | 設定形式とAPI応答 | [設定リファレンス](docs/CONFIGURATION.md) |
